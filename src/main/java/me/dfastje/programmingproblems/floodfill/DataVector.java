@@ -1,4 +1,4 @@
-package me.dfastje.reverselistexample;
+package me.dfastje.programmingproblems.floodfill;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

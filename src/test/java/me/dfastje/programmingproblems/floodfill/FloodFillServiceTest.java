@@ -1,5 +1,6 @@
-package me.dfastje.reverselistexample.service;
+package me.dfastje.programmingproblems.floodfill;
 
+import me.dfastje.programmingproblems.floodfill.FloodFillService;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -9,7 +10,7 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootTest
-class MatrixGroupingServiceTest {
+class FloodFillServiceTest {
 
     //Test Data
     boolean[][] geographicMatrix_2x2;
@@ -21,13 +22,13 @@ class MatrixGroupingServiceTest {
     @TestConfiguration
     static class ReverseListServiceConfiguration {
         @Bean
-        public MatrixGroupingService matrixGroupingServiceBean() {
-            return new MatrixGroupingService();
+        public FloodFillService floodFillServiceBean() {
+            return new FloodFillService();
         }
     }
 
     @Autowired
-    private MatrixGroupingService matrixGroupingService;
+    private FloodFillService floodFillService;
 
     @BeforeEach
     void setupData(){
@@ -56,9 +57,9 @@ class MatrixGroupingServiceTest {
 
     @Test
     void countIslandsTest(){
-        Assertions.assertEquals( 6, matrixGroupingService.countIslands(geographicMatrix_5x5) );
-        Assertions.assertEquals( 1, matrixGroupingService.countIslands(geographicMatrix_2x2) );
-        Assertions.assertEquals( 3, matrixGroupingService.countIslands(geographicMatrix_2x5) );
+        Assertions.assertEquals( 6, floodFillService.countIslands(geographicMatrix_5x5) );
+        Assertions.assertEquals( 1, floodFillService.countIslands(geographicMatrix_2x2) );
+        Assertions.assertEquals( 3, floodFillService.countIslands(geographicMatrix_2x5) );
     }
 
 }

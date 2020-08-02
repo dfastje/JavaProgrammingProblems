@@ -1,13 +1,13 @@
-package me.dfastje.reverselistexample;
+package me.dfastje.programmingproblems;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IsIsLandProblemApplication {
+public class ProgrammingProblemsApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(IsIsLandProblemApplication.class, args);
+		SpringApplication.run(ProgrammingProblemsApplication.class, args);
 	}
 
 }
