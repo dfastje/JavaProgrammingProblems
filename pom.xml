@@ -5,17 +5,17 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.1.RELEASE</version>
+		<version>3.3.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>me.dfastje</groupId>
 	<artifactId>java-programming-problems</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>java-programming-problems</name>
-	<description>example problem of searching a 2D array for number of isolated groupings of like-data</description>
+	<description> Java Programming Problems </description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>22</java.version>
 	</properties>
 
 	<dependencies>
@@ -30,11 +30,6 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
@@ -44,12 +39,6 @@
 					<artifactId>junit-vintage-engine</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-
-		<dependency>
-			<groupId>com.google.guava</groupId>
-			<artifactId>guava</artifactId>
-			<version>29.0-jre</version>
 		</dependency>
 
 	</dependencies>
